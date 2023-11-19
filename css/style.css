@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  background-color: white;
+  background-color: #3e4045;
 }
 
 /* img {
@@ -13,6 +13,8 @@ body {
 #container {
   width: 1000px;
   margin: 0 auto;
+  border: solid 2px #5d7cbd;
+  box-shadow: 1px 10px 10px;
 }
 /* header */
 header {
@@ -20,11 +22,15 @@ header {
   display: flex;
   /* align-items: center;
   justify-content: space-between; */
-  background-color: #4a1e9e;
+  background-color: #5d7cbd;
 }
 
-header img{
-    border-radius: 50rem 50rem 20px 20px;
+.slider {
+  background-color: #5d7cbd;
+}
+
+header img {
+  border-radius: 50rem 50rem 20px 20px;
 }
 
 nav ul li {
@@ -37,12 +43,12 @@ nav ul li a {
   color: black;
   padding: 10px 15px;
   text-decoration: none;
-  color: white;
+  color: #050b21;
 }
 
 nav ul li a:hover {
-  background-color: white;
-  color: #4a1e9e;
+  background-color: #ebefff;
+  color: #5d7cbd;
   border-radius: 5rem 15rem;
 }
 section ul li {
@@ -51,6 +57,7 @@ section ul li {
 
 section ul li a {
   text-decoration: none;
+  color: #050b21;
 }
 
 main {
@@ -60,18 +67,20 @@ main {
 
 article {
   width: 70%;
-  background-color: #bb98ff;
+  background-color: #5d7cbd;
   padding: 20px;
 }
 
 article h1 {
   text-align: center;
+  color: #050b21;
 }
 
 aside {
   width: 30%;
   padding: 20px 30px;
-  background-color: #ddcbff;
+  background-color: #ebefff;
+  border-bottom: 5px solid #5d7cbd;
 }
 
 article img {
@@ -91,23 +100,21 @@ article img {
 }
 
 footer {
-  background-color: #4a1e9e;
-  
-  
+  background-color: #ebefff;
 }
-footer ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
-footer ul li{
-    padding: 20px;
-    display: inline-block;
-    list-style: none;
-    color: white;
+footer ul li {
+  padding: 20px;
+  display: inline-block;
+  list-style: none;
+  color: #050b21;
 }
 
-.material-symbols-outlined{
-    font-size: 40px !important;
+.material-symbols-outlined {
+  font-size: 40px !important;
 }
