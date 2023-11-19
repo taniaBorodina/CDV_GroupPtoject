@@ -30,7 +30,8 @@ header {
 }
 
 header img {
-  border-radius: 50rem 50rem 20px 20px;
+  border-radius: 50rem 50rem 20px 20px;}
+  
 header img {
   border-radius: 50%;
   width: 100px;
