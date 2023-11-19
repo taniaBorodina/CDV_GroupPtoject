@@ -13,15 +13,15 @@ body {
 #container {
   width: 1000px;
   margin: 0 auto;
-  border: solid 2px #5d7cbd;
   box-shadow: 1px 10px 10px;
 }
+
 /* header */
 header {
   padding: 15px 20px;
   display: flex;
-  /* align-items: center;
-  justify-content: space-between; */
+  align-items: center;
+  justify-content: space-between;
   background-color: #5d7cbd;
 }
 
@@ -34,12 +34,12 @@ header {
 
 header img {
   border-radius: 50%;
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 
 .slider img {
-  width: 1000px;
+  width: 100%;
   height: auto;
 }
 
@@ -76,9 +76,9 @@ main {
 }
 
 article {
-  width: 70%;
   background-color: #5d7cbd;
   padding: 20px;
+  border-top: 3px solid darkred;
 }
 
 article h1 {
@@ -100,7 +100,7 @@ aside h2 {
 }
 
 article img {
-  width: 240px;
+  width: 100%;
   height: auto;
 }
 
