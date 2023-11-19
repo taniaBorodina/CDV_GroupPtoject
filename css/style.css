@@ -29,9 +29,9 @@ header {
   background-color: #5d7cbd;
 }
 
-header img {
-  border-radius: 50rem 50rem 20px 20px;}
-  
+/* header img {
+  border-radius: 50rem 50rem 20px 20px;} */
+
 header img {
   border-radius: 50%;
   width: 100px;
@@ -100,7 +100,7 @@ aside h2 {
 }
 
 article img {
-  width: 650px;
+  width: 240px;
   height: auto;
 }
 
