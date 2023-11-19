@@ -23,8 +23,15 @@ header {
   background-color: #4a1e9e;
 }
 
-header img{
-    border-radius: 50rem 50rem 20px 20px;
+header img {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
+
+.slider img {
+  width: 1000px;
+  height: auto;
 }
 
 nav ul li {
@@ -59,13 +66,14 @@ main {
 }
 
 article {
-  width: 70%;
+  width: 100%;
   background-color: #bb98ff;
   padding: 20px;
 }
 
 article h1 {
   text-align: center;
+  margin-right: 65px;
 }
 
 aside {
@@ -75,7 +83,8 @@ aside {
 }
 
 article img {
-  border: 2px solid white;
+  width: 650px;
+  height: auto;
 }
 
 .widget {
@@ -83,31 +92,29 @@ article img {
 }
 
 .widget img {
-  float: left;
-  padding: 0 5px 5px 0;
-  border-radius: 50%;
-  border: 2px white dashed;
-  margin-right: 15px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
   background-color: #4a1e9e;
-  
-  
-}
-footer ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-footer ul li{
-    padding: 20px;
-    display: inline-block;
-    list-style: none;
-    color: white;
 }
 
-.material-symbols-outlined{
-    font-size: 40px !important;
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li {
+  padding: 20px;
+  display: inline-block;
+  list-style: none;
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-size: 40px !important;
 }
