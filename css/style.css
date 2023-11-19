@@ -23,8 +23,8 @@ header {
   background-color: #4a1e9e;
 }
 
-header img{
-    border-radius: 50rem 50rem 20px 20px;
+header img {
+  border-radius: 50rem 50rem 20px 20px;
 }
 
 nav ul li {
@@ -74,6 +74,11 @@ aside {
   background-color: #ddcbff;
 }
 
+aside h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
 article img {
   border: 2px solid white;
 }
@@ -82,34 +87,39 @@ article img {
   margin-bottom: 40px;
 }
 
+.santaIcon {
+  display: flex;
+  justify-content: center;
+}
+
 .widget img {
-  float: left;
   padding: 0 5px 5px 0;
-  border-radius: 50%;
-  border: 2px white dashed;
-  margin-right: 15px;
+  cursor: pointer;
+}
+
+.widget img:hover {
+  width: 105px;
+  filter: drop-shadow(0px 6px 3px rgb(0 0 0 / 0.4));
 }
 
 footer {
   background-color: #4a1e9e;
-  
-  
 }
-footer ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
-footer ul li{
-    padding: 20px;
-    display: inline-block;
-    list-style: none;
-    color: white;
+footer ul li {
+  padding: 20px;
+  display: inline-block;
+  list-style: none;
+  color: white;
 }
 
-.material-symbols-outlined{
-    font-size: 40px !important;
+.material-symbols-outlined {
+  font-size: 40px !important;
 }
 
 /* width */
