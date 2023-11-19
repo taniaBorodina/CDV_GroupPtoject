@@ -23,8 +23,8 @@ header {
   background-color: #4a1e9e;
 }
 
-header img{
-    border-radius: 50rem 50rem 20px 20px;
+header img {
+  border-radius: 50rem 50rem 20px 20px;
 }
 
 nav ul li {
@@ -92,22 +92,104 @@ article img {
 
 footer {
   background-color: #4a1e9e;
-  
-  
 }
-footer ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
-footer ul li{
-    padding: 20px;
-    display: inline-block;
-    list-style: none;
-    color: white;
+footer ul li {
+  padding: 20px;
+  display: inline-block;
+  list-style: none;
+  color: white;
 }
 
-.material-symbols-outlined{
-    font-size: 40px !important;
+.material-symbols-outlined {
+  font-size: 40px !important;
+}
+
+.snow {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.snowflake {
+  font-size: 60px;
+  color: gray;
+  position: relative;
+  animation-name: snowfalling;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.snowflake2 {
+  font-size: 60px;
+  color: gray;
+  position: relative;
+  animation-name: snowfalling2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+@keyframes snowfalling {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  20% {
+    top: 240px;
+    left: 650px;
+  }
+  40% {
+    top: 400px;
+    left: 170px;
+  }
+  60% {
+    top: 800px;
+    left: 730px;
+  }
+  80% {
+    top: 1200px;
+    left: 100px;
+  }
+
+  100% {
+    top: 1600px;
+    left: 520px;
+  }
+}
+
+@keyframes snowfalling2 {
+  0% {
+    top: 0px;
+    left: 100px;
+  }
+  20% {
+    top: 140px;
+    left: 0px;
+  }
+  40% {
+    top: 320px;
+    left: 640px;
+  }
+  60% {
+    top: 610px;
+    left: 130px;
+  }
+  80% {
+    top: 1200px;
+    left: 500px;
+  }
+
+  100% {
+    top: 1600px;
+    left: 220px;
+  }
 }
