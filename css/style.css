@@ -87,11 +87,14 @@ article h1 {
   margin-right: 65px;
 }
 
+article p {
+  text-align: justify;
+}
+
 aside {
   width: 30%;
   padding: 20px 30px;
   background-color: #ebefff;
-  border-bottom: 5px solid #5d7cbd;
 }
 
 aside h2 {
@@ -131,7 +134,6 @@ footer ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
-
 }
 footer ul li {
   padding: 20px;
@@ -243,17 +245,110 @@ footer ul li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 0, 0, 0.527); 
+  background: rgba(255, 0, 0, 0.527);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #b30000;
+}
+
+.title-text {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px;
+}
+
+.copyright {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: #212529;
+  color: white;
+}
+
+.form {
+  width: 70%;
+  padding: 0 30px;
+}
+
+.form-div {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+.form-text {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(34, 7, 7);
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px 0 0 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid whitesmoke;
+  border-radius: 0 10px 10px 0;
+}
+
+.form-textarea {
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn-submit {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #b30000;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+li svg {
+  fill: whitesmoke;
+}
+
+.factory-color {
+  color: #bd6c5c;
+  font-weight: 900;
+}
+
+.icon-color {
+  color: #bd6c5c;
 }
