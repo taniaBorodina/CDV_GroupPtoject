@@ -2,7 +2,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  background-color: #3e4045;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* img {
@@ -13,7 +14,7 @@ body {
 #container {
   width: 1000px;
   margin: 0 auto;
-  box-shadow: 1px 10px 10px;
+  box-shadow: 1px 5px 15px #ed1220;
 }
 
 /* header */
@@ -22,11 +23,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #5d7cbd;
+  background-color: white;
 }
 
 .slider {
-  background-color: #5d7cbd;
+  background-color: white;
 }
 
 /* header img {
@@ -45,15 +46,14 @@ nav ul li {
 
 nav ul li a {
   font-size: 20px;
-  color: black;
+  color: #ed1220;
   padding: 10px 15px;
   text-decoration: none;
-  color: #050b21;
 }
 
 nav ul li a:hover {
-  background-color: #ebefff;
-  color: #5d7cbd;
+  background-color: #ed1220;
+  color: white;
   border-radius: 5rem 15rem;
 }
 section ul li {
@@ -71,9 +71,9 @@ main {
 }
 
 article {
-  background-color: #5d7cbd;
+  background-color: white;
   padding: 20px;
-  border-top: 3px solid darkred;
+  border-top: 3px solid #ed1220;
 }
 
 article h1 {
@@ -89,7 +89,7 @@ article p {
 aside {
   width: 30%;
   padding: 20px 30px;
-  background-color: #ebefff;
+  background-color: white;
 }
 
 aside h2 {
@@ -122,7 +122,7 @@ article img {
 }
 
 footer {
-  background-color: #ebefff;
+  background-color: white;
 }
 footer ul {
   margin: 0;
@@ -347,6 +347,11 @@ li svg {
 .icon-color {
   color: #bd6c5c;
 }
+
+
+#santaLegend {
+  color: #ed1220;
+  font-weight: bold;
 
 .cDownContainer {
   font-family: "Mountains of Christmas", serif;
