@@ -246,13 +246,13 @@ footer ul li {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 0, 0, 0.527);
+  background-image: linear-gradient(to top,rgba(255, 0, 0, 0.527), yellow, green );
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background-image: linear-gradient(to top,green, yellow,  rgba(255, 0, 0, 0.527) );
 }
 
 .title-text {
@@ -411,4 +411,12 @@ li svg {
   display: flex;
   justify-content: center;
   padding-left: 15px;
+}
+
+.frame{
+  padding: 0;
+}
+
+.links h3{
+  text-align: center;
 }
