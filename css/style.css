@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  background-color: white;
+  background-color: #165B33;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,32 +30,33 @@ header {
   background-color: white;
 }
 
-/* header img {
-  border-radius: 50rem 50rem 20px 20px;} */
-
 header img {
   border-radius: 50%;
-  width: 70px;
+  width: 50px;
   height: auto;
 }
-
+nav ul{
+  padding: 0;
+  margin: 0;
+}
 nav ul li {
   display: inline-block;
   list-style: none;
 }
 
 nav ul li a {
-  font-size: 20px;
+  font-size: 1.1rem;
   color: #ed1220;
-  padding: 10px 15px;
+  padding: 5px 15px;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  background-color: #ed1220;
+  background-image: linear-gradient(to left, #ed1220, rgba(248,178,41));
   color: white;
   border-radius: 5rem 15rem;
 }
+
 section ul li {
   list-style: none;
 }
@@ -246,13 +247,13 @@ footer ul li {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to top,rgba(255, 0, 0, 0.527), yellow, green );
+  background-image: linear-gradient(to top,rgba(187, 37, 40, 0.500),rgba(248,178,41,0.500), rgba(19, 74, 42, 0.500) );
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(to top,green, yellow,  rgba(255, 0, 0, 0.527) );
+  background-image: linear-gradient(to top,rgba(187, 37, 40),rgba(248,178,41), rgba(19, 74, 42) );
 }
 
 .title-text {
@@ -278,14 +279,24 @@ footer ul li {
   text-align: center;
 }
 
+.contact-info h3{
+  margin-top: 0;
+}
+
 .bg-dark {
   background-color: #212529;
   color: white;
 }
 
 .form {
-  width: 70%;
-  padding: 0 30px;
+  display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 70%;
+    padding: 0 30px;
+
 }
 
 .form-div {
