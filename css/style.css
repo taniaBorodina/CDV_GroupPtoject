@@ -1,8 +1,13 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  background-color: white;
+  background-color: #165b33f0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* img {
@@ -13,44 +18,56 @@ body {
 #container {
   width: 1000px;
   margin: 0 auto;
+  box-shadow: 1px 5px 15px #ed1220;
 }
+
 /* header */
 header {
   padding: 15px 20px;
   display: flex;
-  /* align-items: center;
-  justify-content: space-between; */
-  background-color: #4a1e9e;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
 }
 
-header img{
-    border-radius: 50rem 50rem 20px 20px;
+.slider {
+  background-color: white;
 }
 
+header img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+}
 nav ul li {
   display: inline-block;
   list-style: none;
 }
 
 nav ul li a {
-  font-size: 20px;
-  color: black;
-  padding: 10px 15px;
+  font-size: 1.1rem;
+  color: #ed1220;
+  padding: 5px 15px;
   text-decoration: none;
-  color: white;
 }
 
 nav ul li a:hover {
-  background-color: white;
-  color: #4a1e9e;
+  background-image: linear-gradient(to top, rgba(248,178,41) 10% , #ed1220 50%, rgba(248,178,41) 100%);
+  color: white;
   border-radius: 5rem 15rem;
 }
+
 section ul li {
   list-style: none;
 }
 
 section ul li a {
   text-decoration: none;
+  color: #050b21;
 }
 
 main {
@@ -59,57 +76,166 @@ main {
 }
 
 article {
-  width: 70%;
-  background-color: #bb98ff;
+  background-color: white;
   padding: 20px;
+  border-top: 3px solid #ed1220;
 }
 
 article h1 {
   text-align: center;
+  color: #050b21;
+  margin-right: 65px;
+}
+
+article p {
+  text-align: justify;
 }
 
 aside {
   width: 30%;
   padding: 20px 30px;
-  background-color: #ddcbff;
+  background-color: white;
+}
+
+aside h2 {
+  font-size: 20px;
+  text-align: center;
 }
 
 article img {
-  border: 2px solid white;
+  width: 100%;
+  height: auto;
 }
 
 .widget {
   margin-bottom: 40px;
 }
 
+.santaIcon {
+  display: flex;
+  justify-content: center;
+}
+
 .widget img {
-  float: left;
   padding: 0 5px 5px 0;
-  border-radius: 50%;
-  border: 2px white dashed;
-  margin-right: 15px;
+  cursor: pointer;
+}
+
+.widget img:hover {
+  width: 105px;
+  filter: drop-shadow(0px 6px 3px rgb(0 0 0 / 0.4));
 }
 
 footer {
-  background-color: #4a1e9e;
-  
-  
+  background-color: white;
 }
-footer ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
-footer ul li{
-    padding: 20px;
-    display: inline-block;
-    list-style: none;
-    color: white;
+footer ul li {
+  padding: 20px;
+  display: inline-block;
+  list-style: none;
+  color: #050b21;
 }
 
-.material-symbols-outlined{
-    font-size: 40px !important;
+.material-symbols-outlined {
+  font-size: 40px !important;
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-size: 40px !important;
+}
+
+.snow {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.snowflake {
+  font-size: 60px;
+  color: gray;
+  position: relative;
+  animation-name: snowfalling;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.snowflake2 {
+  font-size: 60px;
+  color: gray;
+  position: relative;
+  animation-name: snowfalling2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+@keyframes snowfalling {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  20% {
+    top: 240px;
+    left: 650px;
+  }
+  40% {
+    top: 400px;
+    left: 170px;
+  }
+  60% {
+    top: 800px;
+    left: 730px;
+  }
+  80% {
+    top: 1200px;
+    left: 100px;
+  }
+
+  100% {
+    top: 1600px;
+    left: 520px;
+  }
+}
+
+@keyframes snowfalling2 {
+  0% {
+    top: 0px;
+    left: 100px;
+  }
+  20% {
+    top: 140px;
+    left: 0px;
+  }
+  40% {
+    top: 320px;
+    left: 640px;
+  }
+  60% {
+    top: 610px;
+    left: 130px;
+  }
+  80% {
+    top: 1200px;
+    left: 500px;
+  }
+
+  100% {
+    top: 1600px;
+    left: 220px;
+  }
+}
+.material-symbols-outlined {
+  font-size: 40px !important;
 }
 
 /* width */
@@ -119,17 +245,214 @@ footer ul li{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px white;
+  background-color: rgba(248,178,41,0.500);
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 0, 0, 0.527); 
+  /* background: repeating-linear-gradient(40deg,rgba(187, 37, 40, 0.500) 0%,rgba(187, 37, 40, 0.500) 3%,rgba(248,178,41,0.500) 3%,rgba(248,178,41,0.500) 6%, rgba(19, 74, 42, 0.500) 6%,rgba(19, 74, 42, 0.500) 9%  ); */
+  background: repeating-linear-gradient(40deg,rgba(187, 37, 40) 0%,rgba(187, 37, 40) 3%,whitesmoke 3%,white 6%  );
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: repeating-linear-gradient(40deg,whitesmoke 0%,white 3%, rgba(187, 37, 40) 3%,rgba(187, 37, 40) 6% );
+  /* background-image: repeating-linear-gradient(40deg,rgba(187, 37, 40) 0%,rgba(187, 37, 40) 3%,whitesmoke 3%,white 6%  );; */
+}
+
+.title-text {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px;
+}
+
+.copyright {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.contact-info h3{
+  margin-top: 0;
+}
+
+.bg-dark {
+  background-color: #212529;
+  color: white;
+}
+
+.form {
+  display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 70%;
+    padding: 0 30px;
+
+}
+
+.form-div {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+.form-text {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(34, 7, 7);
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px 0 0 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid whitesmoke;
+  border-radius: 0 10px 10px 0;
+}
+
+.form-textarea {
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn-submit {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #b30000;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+li svg {
+  fill: whitesmoke;
+}
+
+.factory-color {
+  color: #bd6c5c;
+  font-weight: 900;
+}
+
+.icon-color {
+  color: #bd6c5c;
+}
+
+#santaLegend {
+  color: #ed1220;
+  font-weight: bold;
+}
+
+.cDownContainer {
+  font-family: "Mountains of Christmas", serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Assets/winter_slider.jpeg");
+  background-size: cover;
+}
+
+.cDownContainer div {
+  filter: drop-shadow(0px 6px 3px rgb(0 0 0 / 0.4));
+}
+
+.cDownContainer div h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.cDownContainer div h2 {
+  font-size: 50px;
+  padding-right: 10px;
+  font-family: cursive;
+}
+
+.cDownContainer div h3 {
+  padding-top: 30px;
+}
+
+.cDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dayContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.hoursContainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.minuteContainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.secContainer {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.frame{
+  padding: 0;
+}
+
+.links h3{
+  text-align: center;
+}
+
+
+.weather{
+  text-align: center;
+  border: 3px solid darkred;
+  border-radius: 20px;
+  background: linear-gradient( darkred, rgba(187, 37, 40, 0.8));
+  box-shadow: 2px 3px 4px;
+  
+}
+
+.span-block{
+  display: block;
+  padding: 5px;
+  font-weight: 800;
+  color: white;
+  
 }
